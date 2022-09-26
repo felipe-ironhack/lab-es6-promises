@@ -28,12 +28,14 @@
 
 
 // Iteration 1 - using callbacks
-// ...
-
+getInstruction('mashedPotatoes', 0, (step0) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step0}</li>`
+  getInstruction('mashedPotatoes', 1, ...)
+});
 
 
 // ITERATIONS 2 & 3 USES A DIFFERENT FUNCTION FROM IT.1
-// Use obTainInstruction(food, step) => pass food as a 'string'
+// Use obtainInstruction(food, step) => pass food as a 'string'
 
 
 // Iteration 2 - using promises
@@ -41,15 +43,33 @@
 // To chain .then() we need to return something (in general a promise)
 // Don't use ';' after the .then()
 // Put just one .catch() at the end
+obtainInstruction('steak', 0)
+  .then( (step0) => {
+    document.querySelector("#steak").innerHTML += `<li>${step0}</li>`
+    //  ... Your code here
+  })
+  .then(() => {
+    // some code
+    // return aPromise
+  })
+  .then()
+  .catch()
+
 
 // Iteration 3 using async/await
 // Remember to add the 'async' before the function statement
 // Remember to invoke that function
+async function makeBroccoli() {
+  await 
+}
 
-// SUPER BONUS: Try to DRY your code in this Iteration 
-// => After going over it, you can see a lot of repetition
-//  how can we write that function in about 5-7 lines?
+makeBroccoli()
+
 
 // Bonus 1 - After a dish is ready make the img appear, inspect the index.html
 
 // Bonus 2 - Promise all
+
+// SUPER BONUS: Try to DRY your code in Iteration 3 and Bonus 2
+// => After going over it, you can see a lot of repetition
+//  how can we write that function in about 5-7 lines?
