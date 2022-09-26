@@ -45,7 +45,6 @@
 // Iteration 3 using async/await
 // Remember to add the 'async' before the function statement
 // Remember to invoke that function
-// You can add a Try...catch block (is not needed in that lab)
 
 // SUPER BONUS: Try to DRY your code in this Iteration 
 // => After going over it, you can see a lot of repetition
