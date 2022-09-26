@@ -51,5 +51,6 @@
 // => After going over it, you can see a lot of repetition
 //  how can we write that function in about 5-7 lines?
 
+// Bonus 1 - After a dish is ready make the img appear, inspect the index.html
+
 // Bonus 2 - Promise all
-// ...
